@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 *,
 *::before,
@@ -35,16 +32,22 @@ html {
     background-color: var(--primary-cream);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .card {
-    margin: auto;
-    margin-top: 80px;
     background-color: #fff;
     display: flex;
     width: 632px;
     border-radius: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .card {
         display: block;
         width: 100%;
@@ -52,14 +55,14 @@ html {
     }
 }
 
-img {
+picture img {
     height: 482px;
     padding-right: 32px;
     border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-    img {
+@media (max-width: 37.5rem) {
+    picture img {
         width: 100%;
         height: auto;
         padding-right: 0;
@@ -73,7 +76,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     letter-spacing: 6px;
-    font-size: 12px;
+    font-size: .75rem;
     padding-top: 32px;
     padding-bottom: 20px;
 }
@@ -81,7 +84,7 @@ img {
 .title {
     color: var(--neutral-dark-blue);
     font-family: 'Fraunces', serif;
-    font-size: 32px;
+    font-size: 2rem;
     padding-right: 32px;
 }
 
@@ -89,7 +92,7 @@ img {
     color: var(--neutral-grey-blue);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: .87rem;
     line-height: 24px;
     padding-top: 24px;
     padding-right: 32px;
@@ -108,7 +111,7 @@ ul {
 .discount-price {
     color: var(--primary-dark-cyan);
     font-family: 'Fraunces', serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 800;
 }
 
@@ -116,7 +119,7 @@ ul {
     color: var(--neutral-grey-blue);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 13px;
+    font-size: .80rem;
     padding-top: 10px;
     padding-bottom: 30px;
     text-decoration: line-through;
@@ -131,7 +134,7 @@ ul {
     margin-bottom: 40px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: .87rem;
     transition: color 1 ease;
 }
 
@@ -141,7 +144,7 @@ ul {
 }
 
 .attribution {
-    font-size: 11px; 
+    font-size: .68rem; 
     text-align: center;
     padding-top: 40px;
 }
